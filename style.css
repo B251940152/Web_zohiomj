@@ -1,0 +1,166 @@
+/* ===== Ерөнхий тохиргоо ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header ба навигац ===== */
+header {
+  background-color: #1c3d5a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+nav {
+  background-color: #2c5d84;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #3f7bab;
+}
+
+nav ul li a.active {
+  background-color: #f4a300;
+  font-weight: bold;
+}
+
+/* ===== Гол контент ===== */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #1c3d5a;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #f4a300;
+  padding-bottom: 8px;
+}
+
+.card h3 {
+  color: #2c5d84;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card ul {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.country-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.country-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.country-box a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #1c3d5a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.country-box a:hover {
+  background-color: #2c5d84;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.info-table th,
+.info-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.info-table th {
+  background-color: #1c3d5a;
+  color: white;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: #f4f6f8;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #1c3d5a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
