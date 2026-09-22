@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Employee List</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Ner</th>
+    <th>Yu hiideg</th>
+    <th>Aimag</th>
+  </tr>
+  <tr>
+    <td>Anu</td>
+    <td>Designer</td>
+    <td>Ulaanbaatar</td>
+  </tr>
+  <tr>
+    <td>Sarnai</td>
+    <td>Orchuulagch</td>
+    <td>Erdenet</td>
+  </tr>
+</table>
+</body>
+</html>
