@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>Ene bol web zohiomj lab4</h1>
+<h2 style="background-color:DodgerBlue; text-align: center;">Lab4 iig turshij uzev</h2>
+<p style="color:Green;text-align: right;">Baruun tishe zuuv...</p>
+<p style="color:Tomato;text-align: center;">Ulbar shar baimaar l bna...</p>
+<h3 style="border: 10px solid Tomato;">Hello World</h3>
+<h4 style="background-color:rgb(220, 120, 20);">rgb(220 120 20 gsn codoor ungu uguv)</h4>
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(220, 120, 20, 0.3);">0.3 gesen ungiin budugruulj uzev</h1>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3JlGe-U1T6R1AMnDr6JMjRfI6q3Iog5H4rfL6ZaS8mVPnlfdSQQE8tIs&s=10" alt="Moodle Summary" style="width:100%; max-width:200px;">
+<h2 style="margin-top: 30px;">YouTube Video</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q3zwkxqh1t0?si=O_DZ6I0qbcQSWWbJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>
+
+
