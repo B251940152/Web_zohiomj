@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Image with Keyboard</title>
+</head>
+<body style="margin: 0; overflow: hidden;">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3579/3579848.png" id="mushroom" alt="Mushroom" 
+     style="width: 100px; height: 100px; position: absolute; left: 0px; top: 0px;">
+
+<script>
+var im = document.getElementById('mushroom');
+var step = 50; 
+
+document.addEventListener('keydown', function(e) {
+  var currentLeft = parseInt(im.style.left) || 0;
+  var currentTop = parseInt(im.style.top) || 0;
+  var key = e.key.toLowerCase();
+
+  switch(key) {
+    case "a":
+    case "arrowleft":
+      im.style.left = (currentLeft - step) + "px";
+      break;
+    case "d":
+    case "arrowright":
+      im.style.left = (currentLeft + step) + "px";
+      break;
+    case "w":
+    case "arrowup":
+      e.preventDefault();
+      im.style.top = (currentTop - step) + "px";
+      break;
+    case "s":
+    case "arrowdown":
+      e.preventDefault();
+      im.style.top = (currentTop + step) + "px";
+      break;
+  }
+});
+</script>
+
+</body>
+</html>
