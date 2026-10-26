@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Энгийн Жишээ</title>
+
+  <style>
+    :root {
+      --brand: #2563eb;
+      --text:  #1f2937;
+      --muted: #6b7280;
+      --bg:    #f8fafc;
+      --card:  #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky; top: 0;
+      z-index: 10;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: .5px;
+      color: var(--brand);
+    }
+    .links a {
+      text-decoration: none;
+      color: var(--text);
+      padding: 8px 10px;
+      border-radius: 6px;
+    }
+    .links a:hover {
+      background: #e5edff;
+      color: var(--brand);
+    }
+
+    .hero {
+      padding: 48px 0 24px;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(24px, 4vw, 40px);
+    }
+    .hero p {
+      color: var(--muted);
+      margin: 0 0 16px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(37,99,235,.25);
+      transition: transform .12s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 24px 0 40px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p { color: var(--muted); margin: 0; }
+
+    footer {
+      border-top: 1px solid #e5e7eb;
+      color: var(--muted);
+      text-align: center;
+      padding: 24px 0 40px;
+    }
+
+    @media (max-width: 720px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .links { display: none; }
+      .grid { grid-template-columns: 1fr; }
+      .hero { padding: 32px 0 12px; }
+    }
+
+    .highlight { 
+      background: #fff7ed; 
+      border-left: 4px solid #f59e0b; 
+      padding: 10px 12px; 
+    }
+    #special-note { 
+      font-style: italic; 
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">МИНИЙ ВЕБСАЙТ</div>
+      <div class="links">
+        <a href="#">Нүүр</a>
+        <a href="#">Үйлчилгээ</a>
+        <a href="#">Бидний тухай</a>
+        <a href="#">Холбоо барих</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Тавтай морилно уу!</h1>
+      <p>Энэ бол CSS болон HTML-ийн энгийн харагдах байдлын жишээ хуудас юм.</p>
+      <a href="#" class="btn">Эхлэх</a>
+    </section>
+
+    <div class="highlight" id="special-note">
+      Тусгай тэмдэглэл: CSS ашиглан вэб хуудасны дизайныг хялбархан өөрчлөх боломжтой.
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Карт 1</h3>
+        <p>Эхний картны тайлбар систем болон мэдээлэл энд байрлана.</p>
+      </div>
+      <div class="card">
+        <h3>Карт 2</h3>
+        <p>Хоёрдахь картны тайлбар ба агуулга энд байрлана.</p>
+      </div>
+      <div class="card">
+        <h3>Карт 3</h3>
+        <p>Гуравдахь картны тайлбар ба агуулга энд байрлана.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Бүх эрх хуулиар хамгаалагдсан.
+    </div>
+  </footer>
+
+</body>
+</html>
